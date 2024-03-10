@@ -50,10 +50,10 @@ If you don't already have one, provision an Azure SQL Database resource in your 
 
 1. Sign into the **Azure portal** at `https://portal.azure.com`.
 2. Create an **Azure SQL** resource with the following settings:
-- **Pricing** General Purpose - Serverless: Gen5, 1 vCore
-- **region** same region as your OpenAI
-- **Backup Storage Redundancy** Locally Redundant
-- **Authentication** SQL authentication (take note of the sql admin user and password)
+- **Pricing**: General Purpose - Serverless: Gen5, 1 vCore
+- **region**: same region as your OpenAI
+- **Backup Storage Redundancy**: Locally Redundant
+- **Authentication**: SQL authentication (take note of the sql admin user and password)
 3. Configure the Network connectivity: 
 - Go to the Azure SQL database you created, click the **server name** link on the Overview page
 - On the SQL Server page, go to **Networking** under **Security**

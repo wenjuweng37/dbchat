@@ -54,7 +54,7 @@ def main():
                         df.to_sql(file_name.split(".")[0], engine, index=False)
                 
                     except Exception as e:
-                        print(f"Error reading {file_name}: {e}")
+                        print(f"{file_name}: {e}")
 
   
 
@@ -85,28 +85,30 @@ def main():
 
 
         #ask sample question you want to ask
-        agent_executor.invoke("how many customers have bike in company name")
+        #agent_executor.invoke("how many customers have bike in company name")
 
         while True:
-            print('1: How many customers have bike in company name?\n' +
-                  '2: Which customer ID has the most accumulative due? \n' +
-                  '3: Ask your own question \n' +
-                  '\'quit\' to exit the program\n')
-            command = input('Enter a number:')
-            if command == '1':
-                agent_executor.invoke("how many customers have bike in company name")
-            elif command =='2':
-                agent_executor.invoke("Which customer ID has the most accumulative due")
-            elif command =='3':
-                question = input('Enter your question:')
-                agent_executor.invoke(question)
-                 
-            elif command.lower() == 'quit':
-                print('Exiting program...')
-                break
-            else :
-                print("Invalid input. Please try again.")
-
+            try:
+                print('1: How many customers have bike in company name?\n' +
+                    '2: Which customer ID has the most accumulative due? \n' +
+                    '3: Ask your own question \n' +
+                    '\'quit\' to exit the program\n')
+                command = input('Enter a number:')
+                if command == '1':
+                    agent_executor.invoke("how many customers have bike in company name")
+                elif command =='2':
+                    agent_executor.invoke("Which customer ID has the most accumulative due")
+                elif command =='3':
+                    question = input('Enter your question:')
+                    agent_executor.invoke(question)
+                    
+                elif command.lower() == 'quit':
+                    print('Exiting program...')
+                    break
+                else :
+                    print("Invalid input. Please try again.")
+            except Exception as ex:
+                print(ex)
 
          
 
@@ -115,7 +117,6 @@ def main():
 
 if __name__ == '__main__': 
     main()
-
 
 
  

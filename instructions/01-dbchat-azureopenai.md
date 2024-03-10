@@ -1,6 +1,4 @@
----
-    title: 'DB chatbot on structured data using Azure Open AI'
----
+
 
 # Integrate Azure OpenAI into your Azure Database
 

@@ -74,7 +74,7 @@ If you don't already have one, provision an Azure SQL Database resource in your 
 Applications for Python have been provided. First, you'll complete some key parts of the application to enable using your Azure OpenAI resource.
 
 1. Create a Python virtual env if you have not done so. To do this, you can Open the palette (SHIFT+CTRL+P) and run a **Python Create Environment** command, select **Venv Creates a `.venv` virtual environment for current workspace**, Then **enter the intepreter path**. You will see at the right bottom Visual Studio Code, a virtual environment is being created. It may take some time. Click the bell notification to check the status. 
-2. In Visual Studio Code, in the **Explorer** pane, browse to the **Labfiles/01-dbchat-azure-openai** folder and expand the **Python** folder.
+2. In Visual Studio Code, in the **Explorer** pane, browse to the **DBCHAT** folder and expand the **Python** folder.
 3. Right-click the **Python** folder containing your code files and open an integrated terminal. Then install the Azure OpenAI SDK package and other related packages by running the pip install shown below (note, if you run into SSL certificate error, you can add these options:  --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org, for example, pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org openai==1.2.0):
 
 

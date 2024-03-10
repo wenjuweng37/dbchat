@@ -65,15 +65,12 @@ If you don't already have one, provision an Azure SQL Database resource in your 
 
 ## Prepare to develop an app in Visual Studio Code
 
-You'll develop your Azure OpenAI app using Visual Studio Code. The code files for your app have been provided in a GitHub repo.
-
-> **Tip**: If you have already cloned the **mslearn-openai** repo, open it in Visual Studio code. Otherwise, follow these steps to clone it to your development environment.
 
 1. Start Visual Studio Code.
-2. Open the palette (SHIFT+CTRL+P) and run a **Git: Clone** command to clone the `https://github.com/MicrosoftLearning/mslearn-openai` repository to a local folder (it doesn't matter which folder).
+2. Open the palette (SHIFT+CTRL+P) and run a **Git: Clone** command to clone the `https://github.com/wenjuweng37/dbchat.git` repository to a local folder (it doesn't matter which folder).
 3. When the repository has been cloned, open the folder in Visual Studio Code.
 
-    > **Note**: If Visual Studio Code shows you a pop-up message to prompt you to trust the code you are opening, click on **Yes, I trust the authors** option in the pop-up.
+
 
 ## Configure your application
 

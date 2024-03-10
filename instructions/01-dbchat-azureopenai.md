@@ -1,5 +1,4 @@
 ---
-lab:
     title: 'DB chatbot on structured data using Azure Open AI'
 ---
 

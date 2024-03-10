@@ -100,7 +100,7 @@ Applications for Python have been provided. First, you'll complete some key part
     - The **deployment name** you specified for your model deployment (available in the **Deployments** page in Azure OpenAI Studio).
     - The Azure SQL Environment variables
 6. Save the configuration file.
-7. This application can connect to your Azure SQL database that have already had schema and data populated in the dbo schema. But you can also upload csv files in the **files** folder. The program will load these files into the Azure SQL database (the file name becomes the table name).
+7. This application can connect to your existing Azure SQL database that has already had tables and data populated in the dbo schema. If you don't have tables loaded in your Azure SQL yet, you have the option of uploading the csv files in the **files** folder. The python program will load these files into the Azure SQL database. The table name is the same as the file name, for example, if you upload customer.csv, the data will be loaded to dbo.customer table. If the table exists already, it would not replace the content. 
     - Currently, we have Customer.csv, Product.csv, ProductCategory.csv, SalesOrderDetail.csv and SalesOrderHeader.csv
     - upload your additional csv files under files if needed. 
 

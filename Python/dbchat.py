@@ -90,17 +90,17 @@ def main():
         while True:
             try:
                 print('1: How many customers have bike in company name?\n' +
-                    '2: Which customer ID has the most accumulative due? \n' +
+                    '2: Which customer ID has the highest accumulative due in sales? \n' +
                     '3: Ask your own question \n' +
                     '\'quit\' to exit the program\n')
                 command = input('Enter a number:')
                 if command == '1':
-                    agent_executor.invoke("how many customers have bike in company name")
+                    agent_executor.invoke("how many customers have bike in company name", handle_parsing_errors=True)
                 elif command =='2':
-                    agent_executor.invoke("Which customer ID has the most accumulative due")
+                    agent_executor.invoke("Which customer ID has the most accumulative due", handle_parsing_errors=True)
                 elif command =='3':
                     question = input('Enter your question:')
-                    agent_executor.invoke(question)
+                    agent_executor.invoke(question, handle_parsing_errors=True)
                     
                 elif command.lower() == 'quit':
                     print('Exiting program...')
